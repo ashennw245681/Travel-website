@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+
+</head>
+<style>
+    /* body{
+        background-image: url("img/background.jpg");
+        background-size: 100%; 
+      } */
+      
+</style> 
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>info@travelc.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TRAVEL</span> C</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="Services.html" class="nav-item nav-link">Services</a>
+                        <a href="tpack.html" class="nav-item nav-link">Tour Packages</a>
+                        <a href="contact.html" class="nav-item nav-link" style="margin-right: 10px;">Contact</a>
+                    </div>
+                    <div class="header-right d-flex d-xs-block d-sm-flex justify-content-end float-right">
+                        <!--  -->
+                        <div class="search-wrapper"  style="padding: 10px; margin: auto;"> 
+                            <a>
+                                <i class="material-icons search">search</i>
+                                <i class="material-icons close">close</i>
+                            </a>
+                            <form autocomplete="off" action="/action_page.php" class="search-form">
+                                <div class="autocomplete" style="width:300px;">
+                                    <input id="myInput" type="text" name="myCountry" placeholder="Search here">
+                                    <button type="button"><i class="material-icons">search</i></button>
+                                </div>
+                            </form>
+                        </div> 
+                        <!--  -->
+                        <div class="nav-item dropdown" style=" margin: auto;">
+                            <a href="" class="nav-item  nav-link" data-toggle="dropdown" style="color: #656565;">
+                                <i class="material-icons" aria-hidden="true" >perm_identity</i>
+                            </a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="category.html#mens" class="dropdown-item">Profile</a>
+                                <a href="category.html#women" class="dropdown-item">Settings</a>
+                                <a href="category.html#children" class="dropdown-item">Logout</a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="cart-wrapper" style="margin: auto;">
+                            <button type="button" class="btn">
+                                <i class="material-icons">shopping_cart</i>
+                                <span class="ttcount">2</span>
+                            </button>
+                            <!--  -->
+                            <div id="cart-dropdown" class="cart-menu">
+                                <ul class="w-100 float-left">
+                                    <li>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center"><a href="#"><img src="img/product/1.jpeg" alt="01" title="01"></a></td>
+                                                    <td class="text-left product-name"><a href="#">aliquam quaerat voluptatem</a>
+                                                        <div class="quantity float-left w-100">
+                                                            <span class="cart-qty">1 × </span>
+                                                            <span class="text-left price"> $20.00</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center close"><a class="close-cart"><i class="material-icons">close</i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center"><a href="#"><img src="img/product/3.jpeg" alt="01" title="01"></a></td>
+                                                    <td class="text-left product-name"><a href="#">aliquam quaerat voluptatem</a>
+                                                        <div class="quantity float-left w-100">
+                                                            <span class="cart-qty">1 × </span>
+                                                            <span class="text-left price"> $20.00</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center close"><a class="close-cart"><i class="material-icons">close</i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="table price mb-30">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>Total</strong></td>
+                                                    <td class="text-right"><strong>$2,122.00</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li class="buttons w-100 float-left">
+                                        <form action="cart_page.html">
+                                            <input class="btn pull-left mt_10 btn-primary btn-rounded w-100" value="View cart" type="submit">
+                                        </form>
+                                        <form action="checkout_page.html">
+                                            <input class="btn pull-right mt_10 btn-secondary btn-rounded w-100" value="Checkout" type="submit">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+
+
+    <section class="vh-10">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                  <div class="col-md-6 col-lg-6 d-none d-md-block">
+                    <img src="img/about.jpg"  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                  </div>
+                  <div class="col-md-5 col-lg-6 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-6 ">
+      
+                      <form>
+
+
+                        <div id="first">
+                            <div class="myform form ">
+                                <div class="logo mb-3">
+                                    <div class="col-md-12 text-center">
+                                        <h1>Login</h1>
+                                    </div>
+                                </div>
+                                <form action="#" method="post" name="loginForm" id="loginForm">
+                                    <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                                <label for="exampleInputEmail1">Password</label>
+                                                <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">
+                                            <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                                        </div>
+                                        <div class="col-md-12 text-center ">
+                                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="login-or">
+                                            <hr class="hr-or">
+                                            <span class="span-or">or</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <p class="text-center">
+                                            <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
+                                            </i> Signup using Google
+                                            </a>
+                                            </p>
+                                        </div>
+                                        
+                                    <div class="form-group">
+                                        <p class="text-center">Don't have an account? <a href="#" id="signup">Sign up here</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                
+                        <div id="second" style="display: none;">
+                            <div class="myform form">
+                                <div class="logo mb-3">
+                                    <div class="col-md-12 text-center">
+                                        <h1>Signup</h1>
+                                    </div>
+                                </div>
+                                <form action="#" method="post" name="registrationForm" id="registrationForm">
+                                    <div class="form-group">
+                                        <label for="signupFirstName">First Name</label>
+                                        <input type="text" name="firstname" class="form-control" id="signupFirstName" placeholder="Enter Firstname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupLastName">Last Name</label>
+                                        <input type="text" name="lastname" class="form-control" id="signupLastName" placeholder="Enter Lastname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupEmail">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupPassword">Password</label>
+                                        <input type="password" name="password" class="form-control" id="signupPassword" placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">       
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label for="">Are you</label>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <input type="radio" name="pack" value="Post Paid"> Traveler
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <input type="radio" name="pack" value="Pre Paid"> Guide
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-block">Get Started For Free</button>
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        <p class="text-center">Already have an account? <a href="#" id="signin">Sign in here</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRAVEL</span> C</h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="Destination.html"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="Services.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="tpack.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="Guides.html"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="Testimonial.html"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="Blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="Destination.html"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="Services.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="tpack.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="Guides.html"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="Testimonial.html"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="Blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@travelc.com.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">travelc.com</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
